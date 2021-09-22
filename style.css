@@ -705,7 +705,6 @@ footer .categories-list span {
   .hamburger { display: block;}
   .nav-list:nth-child(1) { padding-top: 4em;}
   .nav-list a { font-size: 1em;}
-  .responsive-nav { display: block;}
 
   nav{
     padding: 0.5em 0;
@@ -715,9 +714,11 @@ footer .categories-list span {
 
   .nav-list { 
     width: 100%;
-    display: none;
+    display: block;
     flex-direction: column; 
   }
+
+  .responsive-nav { display: none;}
   
   h1 { 
     position: absolute;
