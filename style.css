@@ -160,7 +160,7 @@ nav {
   position: relative;
 }
 
-.banner-item li {
+.slide {
   width:100%;
   display: flex;
   position: absolute;
