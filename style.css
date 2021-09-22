@@ -168,7 +168,10 @@ nav {
   transform: translateX(150%);
 }
 
-.active { transform: translateX(0);}
+.active { 
+  transition: 1s;
+  transform: translateX(0);
+}
 
 .banner-item div {
   width: 60%;
