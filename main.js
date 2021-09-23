@@ -25,8 +25,6 @@ arrow.forEach(function (a) {
     let nextSlide;
     let previousSlide;
 
-    console.log(activeSlide)
-
     // next slide
     if (activeSlide == slide.length - 1) {
       nextSlide = slide[0];
@@ -42,32 +40,38 @@ arrow.forEach(function (a) {
     }
 
 
-    let leftArrow = document.querySelector('.left-arrow');
-    let rightArrow = document.querySelector('.right-arrow');
-    
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
 
-   
+    slider.style.overflowX = 'hidden';
+
     if (a == leftArrow) {
+      leftSide();
+    }
+    else if (a == rightArrow) {
+      rightSide();
+    }
 
-      active.style.transition = '1s';
+    function leftSide() {
+      active.style.transition = '0.2s';
+      active.style.transform = 'translateX(0)';
       active.classList.remove('active');
       nextSlide.classList.add('active');
       previousSlide.style.transform = 'translateX(-150%)';
-      active.style.transform = 'translateX(0)';
       nextSlide.style.transform = 'translateX(150%)';
-      nextSlide.style.transition = '0s';
-      console.log(nextSlide)
+      nextSlide.style.transition = 'none';
+    }
 
-    } else if (a == rightArrow) {
-      active.style.transition = '1s';
+    function rightSide() {
+      active.style.transition = '0.2s';
+      active.style.transform = 'translateX(0)';
       active.classList.remove('active');
-      console.log(active);
       previousSlide.classList.add('active');
       nextSlide.style.transform = 'translateX(150%)';
       previousSlide.style.transform = 'translateX(-150%)';
-      previousSlide.style.transition = '0s';
-      active.style.transform = 'translateX(0)';
+      previousSlide.style.transition = 'none';
+      
     }
-
   })
 })
+
