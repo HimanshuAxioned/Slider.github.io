@@ -168,14 +168,10 @@ nav {
   transform: translateX(150%);
 }
 
-<<<<<<< HEAD
-.active { transform: translateX(0);}
-=======
 .active { 
   transition: 1s;
   transform: translateX(0);
 }
->>>>>>> feature-css
 
 .banner-item div {
   width: 60%;
