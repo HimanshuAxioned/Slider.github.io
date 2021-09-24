@@ -166,12 +166,15 @@ nav {
   position: absolute;
   text-align: center;
   transform: translateX(150%);
+  z-index: -1;
 }
 
 .active { 
   transition: 1s;
   transform: translateX(0);
 }
+
+.top { z-index: 2; }
 
 .banner-item div {
   width: 60%;
