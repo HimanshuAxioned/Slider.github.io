@@ -166,7 +166,6 @@ nav {
   position: absolute;
   text-align: center;
   transform: translateX(150%);
-  z-index: -1;
 }
 
 .active { 
@@ -320,7 +319,7 @@ nav {
   font-weight: 700;
 }
 
-.latest-content h6::first-letter { text-transform: capitalize;} 
+.latest-content h6::first-letter { text-transform: capitalize; } 
 
 .latest-content p {
   padding-bottom: 1em;
@@ -738,7 +737,9 @@ footer .categories-list span {
     display: static;
   }
 
-  .latest-content > li:nth-child(2), .latest-content > li:nth-child(5),.latest-content > li:nth-child(6) { transform: none;}
+  .latest-content > li:nth-child(2), 
+  .latest-content > li:nth-child(5),
+  .latest-content > li:nth-child(6) { transform: none;}
   .latest-content h5 { font-size: 1em;}
   .latest-content h6 { font-size: 1.5em;}
   .latest-content p { font-size: 1.2em;}
