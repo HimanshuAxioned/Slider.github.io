@@ -163,15 +163,12 @@ nav {
   display: flex;
   padding-top: 1em;
   text-align: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   transform: translateX(150%);
   z-index: -1;
-=======
->>>>>>> dev
-=======
+
   background-color: #505789;
->>>>>>> dev
+
 }
 
 .active { 
