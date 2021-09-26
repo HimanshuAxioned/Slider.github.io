@@ -124,8 +124,18 @@ hamburger.addEventListener('click', function () {
 //   slidePosition();
 // }
 
+const slide = [];
+slides.forEach(function (s) {
+  slide.push(s);
+})
 
-$('.banner-content').slick({
+slide.forEach(function(s){
+  s.style.display = 'flex';
+})
+
+let bannerSlide= $('.banner-item')
+
+bannerSlide.slick({
   prevArrow: '.left-arrow',
   nextArrow: '.right-arrow'
-})
+});
